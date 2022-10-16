@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions & events</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+
+        .container {
+            text-align: center;
+            align-content: center;
+        }
+
+        .container {
+            margin-top: 40px;
+            border: 2px solid blue;
+            padding: 0px;
+            margin-left: 500px;
+            margin-right: 500px;
+            border-radius: 2%;
+            background-color: rgb(196, 239, 225);
+        }
+    </style>
+    <script>
+        function validateForm() {
+            let x = document.forms["myForm"]["name"].value;
+            if (x == "") {
+                alert("Name must be filled out"); return false;
+            }
+        }
+    </script>
+</head>
+
+<body style="background-color:rgb(200, 248, 164);">
+    <div class="container">
+        </head>
+        <h2>Form Validation</h2>
+        <form name="myForm" action="" onsubmit="validateForm()">Name:
+            <input type="text" name="name">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
